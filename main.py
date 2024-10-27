@@ -2,12 +2,12 @@ from twilio.rest import Client
 from datetime import datetime, timedelta
 import requests
 
-stock_api = "VC3V8VQSX60JH1EN"
-news_api = "2c2b680a73d64bbf8f1fde7256b538b6"
+stock_api = []
+news_api = []
 
-account_sid = 'ACbbb8fba945900aa7f2a1f4116d1b4ab3'
-auth_token = '3a82e7c3b683c8f2d3bd6f80ad1cc50c'
-api_key = "ba745ec27bb5d154e7ca2bb08e2bc42c"
+account_sid = []
+auth_token = []
+api_key = []
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
@@ -55,9 +55,9 @@ else:
 
 client = Client(account_sid, auth_token)
 message = client.messages.create(
-    from_='whatsapp:+14155238886',
+    from_='whatsapp:+[]',
     body=send,
-    to='whatsapp:+447711259832'
+    to='whatsapp:+[]'
 )
 
 #Optional: Format the SMS message like this: 
